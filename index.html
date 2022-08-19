@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/assets/css/styles.css">
+    <script src="src/assets/js/main.js" defer></script>
+    <title>Triqui</title>
+</head>
+<body>
+    <div class="bg-dark.bg-gradient">
+    <section>
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 id="titulo">Triqui</h1>
+            </div>
+          </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 id="ganador"></h4>
+                <h2>PUNTUACIÓN</h2>                
+                <div id="puntuacion">                    
+                    <div id="puntuacion-jugador">                        
+                        <h4>Jugador</h4>
+                        <p>0</p>
+                    </div>
+                    <div id="puntuacion-computadora">
+                        <h4>Computadora</h4>
+                        <p>0</p>
+                    </div>
+                </div>                
+                <h2>SELECCIONE EL TURNO</h2>
+                <div class="centro-acciones"> 
+                    <center>
+                    <select class="form-select form-select-sm" id="primer-jugador" aria-label=".form-select-sm example">
+                        <option value="O">Jugador</option>
+                        <option value="X">Computadora</option>
+                    </select>   
+                    </center>                 
+                </div>        
+                <br>        
+                <div class="centro-dificultad">
+                    <h2>NIVEL DE DIFICULTAD</h2>
+                    <p>Para cambiar el nivel de dificultad debe seleccionar el nivel y luego reiniciar juego</p>
+                </div>
+                <div class="centro-dificultad-rango">                    
+                    <center>
+                        <select class="form-select form-select-sm" id="seleccionar-jugador" aria-label=".form-select-sm example" onchange="ShowSelected();">
+                            <option value=1>Facíl</option>
+                            <option value=2>Difícil</option>
+                        </select>   
+                    </center> 
+                </div>
+                <br>
+                <button id="reiniciar">Reiniciar juego</button>
+            </div>
+            <div class="col-sm-6">
+                <div class="centro">
+                    <div id="cuadricula"></div>
+                </div>
+            </div>
+          </div>
+    </section>
+</div>
+</body>
+</html>
